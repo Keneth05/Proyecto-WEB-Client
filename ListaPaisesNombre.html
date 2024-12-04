@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- links de materialize y los iconos -->
+    <!-- links de materialize y los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-        <!-- nav y sidenav de la pagina con todos sus links -->
+    <!-- nav y sidenav de la pagina con todos sus links -->
     <header>
         <div class="navbar-fixed">
             <nav class="nav-background">
@@ -70,14 +70,14 @@
                         <input id="search" type="text" class="validate" placeholder="Escribe el nombre del país...">
                         <button class="btn Search"><i class="material-icons right">zoom_in</i>Buscar</button>
                     </div>
-                </fieldset> 
+                </fieldset>
             </div>
         </section>
         <!-- contenedor donde se generan los paises -->
-        <div class="CountryList">              
+        <div class="CountryList">
         </div>
 
-                <!-- template de la carta o lugar donde se mostrara el pais, con el contenido de ella  -->
+        <!-- template de la carta o lugar donde se mostrara el pais, con el contenido de ella  -->
         <template id="template-Country">
             <div class="row CountryItem">
 
@@ -93,29 +93,37 @@
         </template>
     </main>
 
-        <!-- modal donde se muestra informacion extra sobre cada pais, este se hace con clases predefinidas de materialize como la de footer o modal content -->
+    <!-- modal donde se muestra informacion extra sobre cada pais, este se hace con clases predefinidas de materialize como la de footer o modal content -->
     <div id="CountryModalDetails" class="modal">
         <div class="modal-content">
             <div class="center-align ImageAndTitle">
                 <h4 id="CountryName"></h4>
-                <img id="Flag" src="" alt="Country Flag" >
+                <img id="Flag" src="" alt="Country Flag">
             </div>
             <!-- linea para separar contenido -->
-            <div class="divider"></div> 
+            <div class="divider"></div>
             <div class="row Information">
                 <div class="col s12 m6 l6">
-                    <p><i class="material-icons left">location_city</i> <strong>Capital:</strong> <span id="CountryCapital"></span></p>                      
-                    <p><i class="material-icons left">people</i> <strong>Población:</strong> <span  id="CountryPopulation"></span></p>                      
-                    <p><i class="material-icons left">language</i> <strong>Idiomas:</strong> <span id="CountryLenguague"></span></p>  
-                    <p><i class="material-icons left">radar</i> <strong>Área:</strong> <span id="CountryArea"></span></p>
+                    <p><i class="material-icons left">location_city</i> <strong>Capital:</strong> <span
+                            id="CountryCapital"></span></p>
+                    <p><i class="material-icons left">people</i> <strong>Población:</strong> <span
+                            id="CountryPopulation"></span></p>
+                    <p><i class="material-icons left">language</i> <strong>Idiomas:</strong> <span
+                            id="CountryLenguague"></span></p>
+                    <p><i class="material-icons left">radar</i> <strong>Área:</strong> <span id="CountryArea"></span>
+                    </p>
                 </div>
                 <div class="col s12 m6 l6">
-                    <p><i class="material-icons left">public</i> <strong>Región:</strong> <span id="CountryRegion"></span></p>
-                    <p><i class="material-icons left">payments</i> <strong>Moneda:</strong> <span id="CountryCoin"></span></p>
-                    <p><i class="material-icons left">savings</i> <strong>Símbolo:</strong> <span id="CountryCoinSymbol"></span></p>
-                    <p><i class="material-icons left">south_america</i> <strong>Continente:</strong> <span id="CountryContinent"></span></p>
-                </div>                  
-                
+                    <p><i class="material-icons left">public</i> <strong>Región:</strong> <span
+                            id="CountryRegion"></span></p>
+                    <p><i class="material-icons left">payments</i> <strong>Moneda:</strong> <span
+                            id="CountryCoin"></span></p>
+                    <p><i class="material-icons left">savings</i> <strong>Símbolo:</strong> <span
+                            id="CountryCoinSymbol"></span></p>
+                    <p><i class="material-icons left">south_america</i> <strong>Continente:</strong> <span
+                            id="CountryContinent"></span></p>
+                </div>
+
 
             </div>
         </div>
@@ -125,10 +133,11 @@
     </div>
 
 
-        <!-- links de los diferentes scripts de JavaScript que ocupa la pagina para servir correctamente -->
+    <!-- links de los diferentes scripts de JavaScript que ocupa la pagina para servir correctamente -->
     <script src="./Docs/JavaScript/General.js"></script>
     <script src="./Docs/JavaScript/Region&Nombre.js"></script>
     <script src="./Docs/JavaScript/PorNombre.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>
